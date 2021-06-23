@@ -100,9 +100,10 @@
               "node_modules/themify-icons/themify-icons/_themify-icons.scss",
               "node_modules/elegant-icons-sass/css/elegant-icons.min.css",
               "node_modules/jquery-ui-1.12.1/jquery-ui.min.css",
-              "node_modules/jquery-nice-select-master/css/nice-select.css",
               "node_modules/slicknav/dist/slicknav.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/mesStyles/nice-select.css",
+              "node_modules/jquery-nice-select-1.1.0/css/nice-select.css"
             ],
             "scripts": ["node_modules/jquery/dist/jquery.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
@@ -113,10 +114,12 @@
               "node_modules/angular-imagesloaded/dist/angular-imagesloaded.min.js",
               "node_modules/jquery-ui-1.12.1/jquery-ui.min.js",
               "node_modules/jquery-countdown/dist/jquery.countdown.min.js",
-              "node_modules/jquery-nice-select-master/js/jquery.js",
-              "node_modules/jquery-nice-select-master/js/jquery.nice-select.min.js",
               "node_modules/slicknav/dist/jquery.slicknav.min.js",
-              "node_modules/jquery-zoom/jquery.zoom.min.js"
+              "node_modules/slicknav/jquery.slicknav.js",
+              "node_modules/jquery-zoom/jquery.zoom.min.js",
+              "node_modules/download.jqueryui.com/lib/jquery-ui-1-12.js",
+              "src/assets/js/jquery.dd.min.js",
+              "node_modules/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"
             ]
           }
         }

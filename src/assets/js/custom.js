@@ -11,3 +11,7 @@ $('#getting-started').countdown('2025/01/01', function(event) {
 $(function(){
   $('#menu').slicknav();
 });
+
+function myTest(){
+  alert(" le test marche via custom.js ");
+};

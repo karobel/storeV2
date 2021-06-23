@@ -9,9 +9,9 @@
 <!--  necessaire pour faire fonctionner themify-->
   <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css">
   <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css">
-  <link rel="stylesheet" href=""node_modules/font-awesome/css/font-awesome.min.css"">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 
-
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
 
 </head>
@@ -33,8 +33,11 @@
 <script src="node_modules/jquery-countdown/dist/jquery.countdown.min.js"></script>
 
 <!--pour jquery.nice-select.min-->
-<script src="node_modules/jquery-nice-select-master/js/jquery.js"></script>
-<script src="node_modules/jquery-nice-select-master/js/jquery.nice-select.min.js"></script>
-
+<script src="node_modules/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+<script >
+  $(document).ready(function () {
+    $('select').niceSelect();
+  });
+</script>
 
 </html>
