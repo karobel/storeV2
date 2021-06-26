@@ -7,6 +7,7 @@ import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
 import {CheckOutComponent} from "./check-out/check-out.component";
 import {ShoppingCartComponent} from "./shopping-cart/shopping-cart.component";
+import {SalesComponent} from "./sales/sales.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,7 +17,10 @@ const routes: Routes = [
   { path: 'login',  component: LoginComponent },
   { path: 'register',  component: RegisterComponent },
   { path: 'CheckOut',  component: CheckOutComponent },
-  { path: 'shoppingCart',  component: ShoppingCartComponent }
+  { path: 'shoppingCart',  component: ShoppingCartComponent },
+  { path: 'sales/:p1/:p2',  component: SalesComponent },
+  { path: 'sales',  redirectTo: 'sales/1/0', pathMatch: 'full' }
+
 ];
 
 @NgModule({

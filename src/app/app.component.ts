@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import * as $ from 'jquery';
+import {CatalogueService} from "./catalogue.service";
 
 
 // declare const myTest: any;
@@ -13,13 +14,17 @@ import * as $ from 'jquery';
 
 
 export class AppComponent implements OnInit{
-  title = 'storeV2';
+  title = 'Anailis';
 
-  // onClick(){
-  //   myTest();
-  // }
+  constructor(private catService:CatalogueService) {
+  }
 
   ngOnInit() {
+
+
+
+
+    //jquery plugins
     $(window).ready(function () {
       // alert('JQuery est installé');
       $('#myB').click(function () {
@@ -32,6 +37,7 @@ export class AppComponent implements OnInit{
 
 
   }
+
 }
 
 

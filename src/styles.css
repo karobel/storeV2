@@ -5,6 +5,15 @@
 @import '~elegant-icons-sass/css/elegant-icons.min.css';
 @import '~jquery-nice-select-1.1.0/css/nice-select.css';
 
+a:hover{
+  cursor: pointer;
+}
+h4:hover{
+  cursor: pointer;
+}
+.clickable{ /*il suffit de rajouter cette classe pour avoir le cursor*/
+  cursor: pointer;
+}
 
 /*color*/
 

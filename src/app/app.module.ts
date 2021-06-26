@@ -12,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CheckOutComponent } from './check-out/check-out.component';
 import { MenuComponent } from './menu/menu.component';
+import {HttpClientModule} from "@angular/common/http";
+import { SalesComponent } from './sales/sales.component';
 
 
 
@@ -26,11 +28,13 @@ import { MenuComponent } from './menu/menu.component';
     FooterComponent,
     ShoppingCartComponent,
     CheckOutComponent,
-    MenuComponent
+    MenuComponent,
+    SalesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,7 +15,7 @@
       <!-- la div de droite -->
       <div class="ht-right">
         <!--login -->
-        <a href="" routerLink="login" class="login-panel"><i class="fa fa-user"></i>Login</a>
+        <a routerLink="login" class="login-panel"><i class="fa fa-user"></i>Login</a>
         <!--langue -->
         <div class="lan-selector">
 
@@ -33,9 +33,9 @@
         <div class="top-social">
           <a href="https://www.instagram.com/v_anailis/"><i class="ti ti-facebook"></i></a>
           <a href="https://www.instagram.com/v_anailis/"><i class="ti ti-instagram"></i></a>
-          <a href="#"><i class="ti ti-twitter-alt"></i></a>
-          <a href="#"><i class="ti ti-linkedin"></i></a>
-          <a href="#"><i class="ti ti-pinterest"></i></a>
+          <a routerLink="home"><i class="ti ti-twitter-alt"></i></a>
+          <a routerLink="home"><i class="ti ti-linkedin"></i></a>
+          <a routerLink="home"><i class="ti ti-pinterest"></i></a>
         </div>
       </div>
       <!--fin la div de droite -->
@@ -46,7 +46,7 @@
       <div class="row">
         <div class="col-lg-2 col-md-2">
           <div class="logo">
-            <a href="./index.html">
+            <a routerLink="home">
               <img src="assets/images/logo.png" alt="" width="50%" height="40px">
               <!--              <img src="assets/Logo-Joyeria.jpeg" alt="" width="50%" height="40px">-->
             </a>
@@ -64,13 +64,13 @@
         <div class="col-lg-3 text-right col-md-3">
           <ul class="nav-right">
             <li class="heart-icon">
-              <a href="#">
+              <a routerLink="home">
                 <i class="ei-icon_heart_alt"></i>
                 <span>1</span>
               </a>
             </li>
             <li class="cart-icon">
-              <a href="#">
+              <a routerLink="home">
                 <i class="ei-icon_bag_alt"></i>
                 <span>3</span>
               </a>
@@ -122,8 +122,8 @@
                   <h5>$120.00</h5>
                 </div>
                 <div class="select-button">
-                  <a href="" routerLink="shoppingCart" class="primary-btn view-card">VIEW CARD</a>
-                  <a href="" routerLink="CheckOut" class="primary-btn checkout-btn">CHECK OUT</a>
+                  <a  routerLink="shoppingCart" class="primary-btn view-card">VIEW CARD</a>
+                  <a  routerLink="CheckOut" class="primary-btn checkout-btn">CHECK OUT</a>
                 </div>
               </div>
             </li>
@@ -140,15 +140,15 @@
           <i class="ti ti-menu"></i>
           <span>All Categories</span>
           <ul class="depart-hover">
-            <li><a href="#">Collections</a></li> <!--class="active"-->
-            <li><a href="#">Bracelet</a></li>
-            <li><a href="#">Rings</a></li>
-            <li><a href="#">Necklaces</a></li>
-            <li><a href="#">Earrings</a></li>
-            <li><a href="#">Brooches</a></li>
-            <li><a href="#">Charms</a></li>
-            <li><a href="#">Cufflinks</a></li>
-            <li><a href="#">Earrings</a></li>
+            <li><a routerLink="home">Collections</a></li> <!--class="active"-->
+            <li><a routerLink="home">Bracelet</a></li>
+            <li><a routerLink="home">Rings</a></li>
+            <li><a routerLink="home">Necklaces</a></li>
+            <li><a routerLink="home">Earrings</a></li>
+            <li><a routerLink="home">Brooches</a></li>
+            <li><a routerLink="home">Charms</a></li>
+            <li><a routerLink="home">Cufflinks</a></li>
+            <li><a routerLink="home">Earrings</a></li>
 <!--            <li><a href="#">Name Jewellery</a></li>-->
 <!--            <li><a href="#">Wedding Rings</a></li>-->
 <!--            <li><a href="#">Engagement Rings</a></li>-->
@@ -158,25 +158,25 @@
       </div>
       <nav class="nav-menu mobile-menu">
         <ul>
-          <li class="active"><a href="" routerLink="">Home</a></li>
-          <li><a href="" routerLink="shop">Shop</a></li>
-          <li><a href="" routerLink="shop">TOPICS</a>
+          <li [routerLinkActive]="['active']" ><a routerLink="home">Home</a></li>  <!--class="active"-->
+          <li [routerLinkActive]="['active']"><a routerLink="shop">Shop</a></li>
+          <li ><a  routerLink="shop">TOPICS</a>
             <ul class="dropdown">
-              <li><a href="#">Women's Jewellery</a></li>
-              <li><a href="#">Men's Jewellery</a></li>
-              <li><a href="#">Children's Jewellery</a></li>
-              <li><a href="#">Engraved Jewellery</a></li>
-              <li><a href="#">Premium Jewellery</a></li>
+              <li><a routerLink="home">Women's Jewellery</a></li>
+              <li><a routerLink="home">Men's Jewellery</a></li>
+              <li><a routerLink="home">Children's Jewellery</a></li>
+              <li><a routerLink="home">Engraved Jewellery</a></li>
+              <li><a routerLink="home">Premium Jewellery</a></li>
             </ul>
           </li>
-          <li><a href="" routerLink="">Sales</a></li>
-          <li><a href="" routerLink="contact">Contact</a></li>
-          <li><a href="" routerLink="">Pages</a>
+          <li [routerLinkActive]="['active']"><a routerLink="sales">Sales</a></li>
+          <li [routerLinkActive]="['active']"><a routerLink="contact">Contact</a></li>
+          <li><a routerLink="">Pages</a>
             <ul class="dropdown">
-              <li><a href="" routerLink="shoppingCart">Shopping Cart</a></li>
-              <li><a href="" routerLink="CheckOut">Checkout</a></li>
-              <li><a href="" routerLink="register">Register</a></li>
-              <li><a href="" routerLink="login">Login</a></li>
+              <li><a routerLink="shoppingCart">Shopping Cart</a></li>
+              <li><a routerLink="CheckOut">Checkout</a></li>
+              <li><a routerLink="register">Register</a></li>
+              <li><a routerLink="login">Login</a></li>
             </ul>
           </li>
         </ul>
